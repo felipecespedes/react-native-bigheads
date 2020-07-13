@@ -6,6 +6,14 @@
 
 **Big Heads** avatars for React Native. Based on [@bigheads/core](https://github.com/RobertBroersma/bigheads)
 
+<p align="center" >
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
+</p>
+
 ## Getting Started
 
 ### install dependencies
@@ -27,7 +35,17 @@ Notice this package requires [react-native-svg](https://github.com/react-native-
 import the `BigHead` component from `react-native-bigheads`
 
 ```jsx
-import { BigHead } from 'react-native-bigheads'
+import { BigHead }<p align="center" >
+10
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
+11
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
+12
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
+13
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
+14
+</p> from 'react-native-bigheads'
 ```
 use the `BigHead` component like this:
 
