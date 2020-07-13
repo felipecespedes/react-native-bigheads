@@ -8,17 +8,20 @@
 
 ## Getting Started
 
-### install dependency
+### install dependencies
 
 ```shell
-yarn add react-native-bigheads
+yarn add react-native-bigheads react-native-svg
 ```
 
 or
 
 ```shell
-npm install react-native-bigheads --save
+npm install react-native-bigheads react-native-svg --save
 ```
+
+Notice this package requires [react-native-svg](https://github.com/react-native-community/react-native-svg) to be installed
+
 ### usage
 
 import the `BigHead` component from `react-native-bigheads`
