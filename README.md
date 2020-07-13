@@ -28,24 +28,14 @@ or
 npm install react-native-bigheads react-native-svg --save
 ```
 
-Notice this package requires [react-native-svg](https://github.com/react-native-community/react-native-svg) to be installed
+This package requires [react-native-svg](https://github.com/react-native-community/react-native-svg) to be installed
 
 ### usage
 
 import the `BigHead` component from `react-native-bigheads`
 
 ```jsx
-import { BigHead }<p align="center" >
-10
-  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
-11
-  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
-12
-  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
-13
-  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
-14
-</p> from 'react-native-bigheads'
+import { BigHead } from 'react-native-bigheads'
 ```
 use the `BigHead` component like this:
 
