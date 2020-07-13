@@ -7,11 +7,11 @@
 **Big Heads** avatars for React Native. Based on [@bigheads/core](https://github.com/RobertBroersma/bigheads)
 
 <p align="center" >
-  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
-  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
-  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
-  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
-  <img alt="Big Heads Demo" src="https://bigheads.io/svg" height="100" />
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg?one" height="100" />
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg?two" height="100" />
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg?three" height="100" />
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg?four" height="100" />
+  <img alt="Big Heads Demo" src="https://bigheads.io/svg?five" height="100" />
 </p>
 
 ## Getting Started
