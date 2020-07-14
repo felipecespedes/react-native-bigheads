@@ -63,6 +63,27 @@ use the `BigHead` component like this:
 />
 ```
 
+### Props
+
+- [`accessory`](#accessory)
+- [`body`](#body)
+- [`circleColor`](#circlecolor)
+- [`clothing`](#clothing)
+- [`clothingColor`](#clothingcolor)
+- [`containerProps`](#containerprops)
+- [`containerStyles`](#containerstyles)
+- [`eyebrows`](#eyebrows)
+- [`eyes`](#eyes)
+- [`facialHair`](#facialhair)
+- [`graphics`](#graphics)
+- [`hair`](#hair)
+- [`hairColor`](#haircolor)
+- [`hat`](#hat)
+- [`lipColor`](#lipcolor)
+- [`mouth`](#mouth)
+- [`size`](#size)
+- [`skinTone`](#skinTone)
+
 # Reference
 
 ## Props
