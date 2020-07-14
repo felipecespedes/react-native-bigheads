@@ -268,6 +268,9 @@ The color of the skin
 
 ---
 
+# Authors
+- [Felipe Céspedes](https://felipecespedes.github.io/)
+
 # License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
