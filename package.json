@@ -3,6 +3,18 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felipecespedes/react-native-bigheads"
+  },
+  "keywords": [
+    "bigheads",
+    "react",
+    "native"
+  ],
+  "bugs": {
+    "url": "https://github.com/felipecespedes/react-native-bigheads/issues"
+  },
   "files": [
     "dist",
     "src"
@@ -33,7 +45,8 @@
     "trailingComma": "es5"
   },
   "name": "react-native-bigheads",
-  "author": "felipecespedes",
+  "author": "Felipe Céspedes",
+  "description": "Big Heads avatars for React Native",
   "module": "dist/react-native-bigheads.esm.js",
   "devDependencies": {
     "@types/react": "^16.9.43",
