@@ -4,7 +4,7 @@
   <img alt="Big Heads Demo" src="screenshots/screenshot.gif" height="600" />
 </p>
 
-**Big Heads** avatars for React Native. Based on [@bigheads/core](https://github.com/RobertBroersma/bigheads)
+**BigHeads** avatars for React Native. Based on [@bigheads/core](https://github.com/RobertBroersma/bigheads)
 
 <p align="center" >
   <img alt="Big Heads Demo" src="https://bigheads.io/svg?one" height="100" />
