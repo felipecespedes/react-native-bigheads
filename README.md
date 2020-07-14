@@ -274,6 +274,7 @@ The color of the skin
 ---
 
 # Authors
+- Some portions of this code belong to the [Big Heads authors](https://github.com/RobertBroersma/bigheads) which were distributed under the [MIT License](https://github.com/RobertBroersma/bigheads/blob/main/LICENSE)
 - [Felipe Céspedes](https://felipecespedes.github.io/)
 
 # License
