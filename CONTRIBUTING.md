@@ -26,7 +26,7 @@ yarn android # or yarn ios
 yarn start
 ```
 
-As [React Native doesn't support symlinks](https://github.com/facebook/metro/issues/1) yet you will need to copy the content of the `react-native-bigheads/dist` folder and the `react-native-bigheads/package.json`(react-native-bigheads) file into the `BigHeadsDemo/node_modules/react-native-bigheads` folder every time you make changes.
+As [React Native doesn't support symlinks](https://github.com/facebook/metro/issues/1) yet you will need to copy the content of the `react-native-bigheads/dist` folder and the `react-native-bigheads/package.json` file into the `BigHeadsDemo/node_modules/react-native-bigheads` folder every time you make changes.
 
 The following script can help you to have those directories synchronized, just make sure to:
 
