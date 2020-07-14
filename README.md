@@ -274,7 +274,7 @@ The color of the skin
 ---
 
 # Authors
-- Some portions of this code belong to the [Big Heads authors](https://github.com/RobertBroersma/bigheads) which were distributed under the [MIT License](https://github.com/RobertBroersma/bigheads/blob/main/LICENSE)
+- Some portions of this code belong to the [Big Heads authors](https://github.com/RobertBroersma/bigheads) which are distributed under the [MIT License](https://github.com/RobertBroersma/bigheads/blob/main/LICENSE)
 - [Felipe Céspedes](https://felipecespedes.github.io/) <img src="https://bigheads.io/svg?accessory=roundGlasses&body=chest&circleColor=blue&clothing=shirt&clothingColor=red&eyebrows=raised&eyes=happy&facialHair=none&graphic=none&hair=short&hairColor=brown&hat=none5&hatColor=red&lashes=true&lipColor=red&mask=true&mouth=grin&skinTone=light" alt="Big Head" height="50" />
 
 # License
