@@ -266,6 +266,8 @@ The color of the skin
 | -------- | -------- |
 | enum('light', 'yellow', 'brown', 'dark', 'red', 'black') | No       |
 
+---
+
 # License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
