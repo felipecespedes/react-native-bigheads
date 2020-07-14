@@ -27,8 +27,13 @@ or
 ```shell
 npm install react-native-bigheads react-native-svg --save
 ```
+> This package requires [react-native-svg](https://github.com/react-native-community/react-native-svg) to be installed
 
-This package requires [react-native-svg](https://github.com/react-native-community/react-native-svg) to be installed
+#### Aditional steps in iOS
+
+```shell
+cd ios && pod install
+```
 
 ### usage
 
