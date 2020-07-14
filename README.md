@@ -69,9 +69,147 @@ use the `BigHead` component like this:
 
 ### `size`
 
+Size of the avatar
+
 | Type     | Required | Default |
 | -------- | -------- | ------- |
 | number   | No       | 100     |
+
+### `eyes`
+
+Type of eyes
+
+| Type     | Required |
+| -------- | -------- |
+| enum('normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'heart') | No       |
+
+### `eyebrows`
+
+Type of eyebrows
+
+| Type     | Required |
+| -------- | -------- |
+| enum('raised', 'leftLowered', 'serious', 'angry', 'concerned') | No       |
+
+### `mouths`
+
+Type of mouth
+
+| Type     | Required |
+| -------- | -------- |
+| enum('grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue') | No       |
+
+### `hair`
+
+Type of hair
+
+| Type     | Required |
+| -------- | -------- |
+| enum('none', 'long', 'bun', 'short', 'pixie', 'balding', 'buzz', 'afro', 'bob') | No       |
+
+### `facialHair`
+
+Type of facial hair
+
+| Type     | Required |
+| -------- | -------- |
+| enum('none', 'none2', 'none3', 'stubble', 'mediumBeard') | No       |
+
+### `clothing`
+
+Type of cloth
+
+| Type     | Required |
+| -------- | -------- |
+| enum('naked', 'shirt', 'dressShirt', 'vneck', 'tankTop', 'dress') | No       |
+
+### `accessory`
+
+Type of accessory
+
+| Type     | Required |
+| -------- | -------- |
+| enum('none', 'roundGlasses', 'tinyGlasses', 'shades') | No       |
+
+### `graphics`
+
+Type of graphics over the t-shirts
+
+| Type     | Required |
+| -------- | -------- |
+| enum('none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL') | No       |
+
+### `hat`
+
+Type of hat
+
+| Type     | Required |
+| -------- | -------- |
+| enum('none', 'none2', 'none3', 'none4', 'none5', 'beanie', 'turban') | No       |
+
+### `body`
+
+Type of body
+
+| Type     | Required |
+| -------- | -------- |
+| enum('chest', 'breasts') | No       |
+
+### `skinTone`
+
+The color of the skin
+
+| Type     | Required |
+| -------- | -------- |
+| enum('light', 'yellow', 'brown', 'dark', 'red', 'black') | No       |
+
+### `hairColor`
+
+The color of the hair
+
+| Type     | Required |
+| -------- | -------- |
+| enum('blonde', 'orange', 'black', 'white', 'brown', 'blue', 'pink') | No       |
+
+### `lipColor`
+
+The color of the lips
+
+| Type     | Required |
+| -------- | -------- |
+| enum('red', 'purple', 'pink', 'turqoise', 'green') | No       |
+
+### `clothingColor`
+
+The color of the clothes
+
+| Type     | Required |
+| -------- | -------- |
+| enum('white', 'blue', 'black', 'green', 'red') | No       |
+
+### `circleColor`
+
+The color of the circular background
+
+| Type     | Required |
+| -------- | -------- |
+| enum('blue') | No       |
+
+### `containerStyles`
+
+Styles to be applied to the container element ([View](https://reactnative.dev/docs/view))
+
+| Type     | Required |
+| -------- | -------- |
+| [Style](https://reactnative.dev/docs/style) | No       |
+
+### `containerProps`
+
+Props to be passed to the container element ([View](https://reactnative.dev/docs/view))
+
+| Type     | Required |
+| -------- | -------- |
+| [View.props](https://reactnative.dev/docs/view#props) | No       |
 
 # License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
