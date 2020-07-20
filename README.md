@@ -1,7 +1,7 @@
 # `react-native-bigheads`
 
 <p align="center" >
-  <img alt="Big Heads Demo" src="screenshots/screenshot.gif" height="600" />
+  <img alt="Big Heads Demo" src="https://github.com/felipecespedes/react-native-bigheads/blob/master/screenshots/screenshot.gif" height="600" />
 </p>
 
 **BigHeads** avatars for React Native. Based on [@bigheads/core](https://github.com/RobertBroersma/bigheads)
@@ -278,7 +278,7 @@ The color of the skin
 - [Felipe Céspedes](https://felipecespedes.github.io/) <img src="https://bigheads.io/svg?accessory=roundGlasses&body=chest&circleColor=blue&clothing=shirt&clothingColor=red&eyebrows=raised&eyes=happy&facialHair=none&graphic=none&hair=short&hairColor=brown&hat=none5&hatColor=red&lashes=true&lipColor=red&mask=true&mouth=grin&skinTone=light" alt="Big Head" height="50" />
 
 # License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/felipecespedes/react-native-bigheads/blob/master/LICENSE) file for details
 
 # Contributing
-Please see the [Contributing Guidelines](./CONTRIBUTING.md).
+Please see the [Contributing Guidelines](https://github.com/felipecespedes/react-native-bigheads/blob/master/CONTRIBUTING.md).
