@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import { colors } from '../theme'
 import { ThemeContext } from '../themeContext'
@@ -227,10 +227,6 @@ export const Avatar = ({
   const Graphic = graphicsMap[graphic]
   const Hat = hatMap[hat]
   const Body = bodyMap[body]
-
-  useEffect(() => {
-    console.log('initializing big head')
-  }, []);
 
   return (
     <ThemeContext.Provider value={{ colors, skin }}>
