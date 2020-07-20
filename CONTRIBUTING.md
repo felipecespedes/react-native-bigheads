@@ -42,4 +42,4 @@ done
 
 ## Submitting a PR
 
-Before you make your PR to make sure you haven't broken anything.
+Before you submit your PR, please make sure you haven't broken anything.
