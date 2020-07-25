@@ -1,4 +1,4 @@
-# Version 1.0.0
+# Version 1.0.0 🎉
 * New `accessory` values were added: `faceMask`, `hoopEarrings`
 * New `clothing` values were added: `denimJacket`, `hoodie`, `chequeredShirt`, `chequeredShirtDark`
 * New `eyes` values were added: `crazy`, `cute`, `dollars`, `stars`, `cyborg`, `simplePatch`, `piratePatch`
@@ -12,7 +12,7 @@
 
 *These new values and props were inspired by [vue-bigheads](https://github.com/DerpyScripts/vue-bigheads)*
 
-## Breaking changes
+## Breaking changes ⚠️
 * `mask` prop was renamed to `showBackground`
 * `circleColor` prop was renamed to `bgColor`
 * `heart` value was renamed to `hearts` in the `eyes` prop
