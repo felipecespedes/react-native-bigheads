@@ -65,6 +65,10 @@ import { DressShirt } from './clothing/DressShirt'
 import { StyleSheet, ViewProps } from 'react-native'
 import { FaceMask } from './accessories/FaceMask'
 import { HoopEarrings } from './accessories/HoopEarrings'
+import { Hoodie } from './clothing/Hoodie'
+import { DenimJacket } from './clothing/DenimJacket'
+import * as ChequeredShirt from './clothing/ChequeredShirt'
+import * as ChequeredShirtDark from './clothing/ChequeredShirtDark'
 
 export const eyesMap = {
   normal: NormalEyes,
@@ -123,6 +127,10 @@ export const clothingMap = {
   vneck: { Back: VNeck, Front: Noop },
   tankTop: { Back: TankTop, Front: Noop },
   dress: Dress,
+  denimJacket: { Back: DenimJacket, Front: Noop },
+  hoodie: { Back: Hoodie, Front: Noop },
+  chequeredShirt: ChequeredShirt,
+  chequeredShirtDark: ChequeredShirtDark
 }
 
 export const accessoryMap = {

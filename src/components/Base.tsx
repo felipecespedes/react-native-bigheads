@@ -34,6 +34,7 @@ interface BaseProps {
   body: {
     Front: React.ComponentType<BodyProps>
     Back: React.ComponentType<BodyProps>
+    hasBreasts: boolean
   }
   clothing: {
     Front: React.ComponentType<ClothingProps>
@@ -85,7 +86,7 @@ export const Base = ({
 
   const { Front: FrontHair, Back: BackHair, hatScale } = hair
   const { Front: FrontHat, Back: BackHat } = hat
-  const { Front: FrontBody, Back: BackBody } = body
+  const { Front: FrontBody, Back: BackBody, hasBreasts } = body
   const {
     Front: ClothingFront,
     Back: ClothingBack,
@@ -194,7 +195,7 @@ export const Base = ({
           />
 
           <BackBody clothingColor={clothingColor} braStraps={braStraps} />
-          <ClothingBack color={clothingColor} graphic={Graphic} />
+          <ClothingBack color={clothingColor} graphic={Graphic} hasBreasts={hasBreasts} />
           {!(ClothingFront === Noop && ClothingBack === Noop) && (
             <FrontBody
               clothingColor={
@@ -203,7 +204,7 @@ export const Base = ({
               braStraps={braStraps}
             />
           )}
-          <ClothingFront color={clothingColor} graphic={Graphic} />
+          <ClothingFront color={clothingColor} graphic={Graphic} hasBreasts={hasBreasts} />
           <FacialHair color={hairColor} />
           <Eyes withLashes={lashes} />
           <Mouth lipColor={lipColor} />
