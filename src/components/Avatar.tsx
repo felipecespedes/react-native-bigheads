@@ -76,6 +76,7 @@ import { Stars } from './eyes/Stars'
 import { Cyborg } from './eyes/Cyborg'
 import { SimplePatch } from './eyes/SimplePatch'
 import { PiratePatch } from './eyes/PiratePatch'
+import { Goatee } from './facialHair/Goatee'
 
 export const eyesMap = {
   normal: NormalEyes,
@@ -132,6 +133,7 @@ export const facialHairMap = {
   none3: Noop,
   stubble: StubbleBeard,
   mediumBeard: MediumBeard,
+  goatee: Goatee
 }
 
 export const clothingMap = {
