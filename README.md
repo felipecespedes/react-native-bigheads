@@ -324,6 +324,9 @@ The color of the skin
 - Some portions of this code belong to the [Big Heads authors](https://github.com/RobertBroersma/bigheads) which are distributed under the [MIT License](https://github.com/RobertBroersma/bigheads/blob/main/LICENSE)
 - [Felipe Céspedes](https://felipecespedes.github.io/) <img src="https://bigheads.io/svg?accessory=roundGlasses&body=chest&circleColor=blue&clothing=shirt&clothingColor=red&eyebrows=raised&eyes=happy&facialHair=none&graphic=none&hair=short&hairColor=brown&hat=none5&hatColor=red&lashes=true&lipColor=red&mask=true&mouth=grin&skinTone=light" alt="Big Head" height="50" />
 
+# Changelog
+[Learn about the latest improvements](https://github.com/felipecespedes/react-native-bigheads/blob/master/CHANGELOG.md)
+
 # License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/felipecespedes/react-native-bigheads/blob/master/LICENSE) file for details
 
