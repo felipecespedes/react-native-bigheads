@@ -84,6 +84,12 @@ import * as Party from './hats/Party'
 import * as Hijab from './hats/Hijab'
 import { PiercedTongue } from './mouths/PiercedTongue'
 import { VomitingRainbow } from './mouths/VomitingRainbow'
+import { BgCircle } from './backgrounds/BgCircle'
+import { BgSquare } from './backgrounds/BgSquare'
+import { BgSquircle } from './backgrounds/BgSquircle'
+import { BgCircleMask } from './backgrounds/BgCircleMask'
+import { BgSquareMask } from './backgrounds/BgSquareMask'
+import { BgSquircleMask } from './backgrounds/BgSquircleMask'
 
 export const eyesMap = {
   normal: NormalEyes,
@@ -196,6 +202,12 @@ export const bodyMap = {
   breasts: Breasts,
 }
 
+export const bgShapeMap = {
+  circle: { Shape: BgCircle, Mask: BgCircleMask },
+  square: { Shape: BgSquare, Mask: BgSquareMask },
+  squircle: { Shape: BgSquircle, Mask: BgSquircleMask }
+}
+
 function selectRandomKey<T extends {}>(object: T) {
   return (Object.keys(object) as Array<keyof typeof object>)[
     Math.floor(Math.random() * Object.keys(object).length)
@@ -217,7 +229,8 @@ export interface AvatarProps {
 
   hairColor?: keyof typeof colors.hair
   clothingColor?: keyof typeof colors.clothing
-  circleColor?: keyof typeof colors.bgColors
+  bgShape?: keyof typeof bgShapeMap
+  bgColor?: keyof typeof colors.bgColors
   lipColor?: keyof typeof colors.lipColors
   hatColor?: keyof typeof colors.clothing
 
@@ -244,7 +257,8 @@ export const Avatar = ({
 
   hairColor = selectRandomKey(colors.hair),
   clothingColor = selectRandomKey(colors.clothing),
-  circleColor = selectRandomKey(colors.bgColors),
+  bgShape = selectRandomKey(bgShapeMap),
+  bgColor = selectRandomKey(colors.bgColors),
   lipColor = selectRandomKey(colors.lipColors),
   hatColor = selectRandomKey(colors.clothing),
 
@@ -269,6 +283,7 @@ export const Avatar = ({
   const Graphic = graphicsMap[graphic]
   const Hat = hatMap[hat]
   const Body = bodyMap[body]
+  const BgShape = bgShapeMap[bgShape]
 
   return (
     <ThemeContext.Provider value={{ colors, skin }}>
@@ -286,7 +301,8 @@ export const Avatar = ({
         hatColor={hatColor}
         hairColor={hairColor}
         clothingColor={clothingColor}
-        circleColor={circleColor}
+        bgShape={BgShape}
+        bgColor={bgColor}
         lipColor={lipColor}
         mask={mask}
         lashes={lashes}

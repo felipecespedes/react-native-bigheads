@@ -5,8 +5,6 @@ import { Noop } from '../utils/Noop'
 import { FacialHairProps } from './facialHair/types'
 import { HairProps } from './hair/types'
 import { ClothingProps } from './clothing/types'
-import { Mask } from './Mask'
-import { BgCircle } from './BgCircle'
 import { MouthProps } from './mouths/types'
 import { BodyProps } from './bodies/types'
 import { HatProps } from './hats/types'
@@ -14,7 +12,7 @@ import { EyeProps } from './eyes/types'
 import { DressShirt } from './clothing/DressShirt'
 import { Svg, G, Path } from 'react-native-svg'
 import { View, ViewProps, StyleSheet } from 'react-native'
-
+import { BgShapeProps, BgMaskProps } from './backgrounds/types'
 interface BaseProps {
   eyes: React.ComponentType<EyeProps>
   eyebrows: React.ComponentType
@@ -44,7 +42,11 @@ interface BaseProps {
 
   clothingColor: keyof typeof colors.clothing
   hairColor: keyof typeof colors.hair
-  circleColor: keyof typeof colors.bgColors
+  bgShape: {
+    Shape: React.ComponentType<BgShapeProps>,
+    Mask: React.ComponentType<BgMaskProps>
+  }
+  bgColor: keyof typeof colors.bgColors
   lipColor: keyof typeof colors.lipColors
   hatColor: keyof typeof colors.clothing
 
@@ -70,7 +72,8 @@ export const Base = ({
 
   hairColor,
   clothingColor,
-  circleColor,
+  bgShape = { Shape: Noop, Mask: Noop },
+  bgColor,
   lipColor,
   hatColor,
 
@@ -92,6 +95,7 @@ export const Base = ({
     Back: ClothingBack,
     braStraps = true,
   } = clothing
+  const { Shape: BgShape, Mask: BgMask } = bgShape;
 
   return (
     <View
@@ -106,9 +110,9 @@ export const Base = ({
       { ...containerProps }
     >
       <Svg viewBox="0 0 1000 990" {...rest}>
-        {mask && <Mask id="mask" />}
+        {mask && <BgMask id="mask" />}
         <G mask="url(#mask)">
-          {mask && <BgCircle circleColor={circleColor} />}
+          {mask && <BgShape bgColor={bgColor} />}
           <BackHat color={hatColor} scale={hatScale} />
           <BackHair hairColor={hairColor} hasHat={FrontHat !== Noop} />
           <Path
