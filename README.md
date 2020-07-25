@@ -291,6 +291,7 @@ Type of mouth
 ### `showBackground`
 
 Whether or not to display the background color
+
 When `true` it cuts off everything below the avatar otherwise it won't clip off any of the avatar
 
 | Type     | Required | Default |
