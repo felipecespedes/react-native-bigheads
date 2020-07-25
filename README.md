@@ -46,10 +46,10 @@ use the `BigHead` component like this:
 
 ```jsx
 <BigHead
-  size={300}
   accessory="shades"
+  bgColor="blue"
+  bgShape="circle"
   body="chest"
-  circleColor="blue"
   clothing="tankTop"
   clothingColor="black"
   eyebrows="angry"
@@ -60,10 +60,11 @@ use the `BigHead` component like this:
   hairColor="black"
   hat="none"
   hatColor="green"
-  lashes="false"
+  lashes={false}
   lipColor="purple"
-  mask="true"
   mouth="open"
+  showBackground={true}
+  size={300}
   skinTone="brown"
 />
 ```
@@ -293,7 +294,7 @@ Whether or not to display the background color
 When `true` it cuts off everything below the avatar otherwise it won't clip off any of the avatar
 
 | Type     | Required | Default |
-| -------- | -------- |
+| -------- | -------- | ------- |
 | boolean  | No       | true    |
 
 ---
