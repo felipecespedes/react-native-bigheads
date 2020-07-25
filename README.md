@@ -80,12 +80,15 @@ use the `BigHead` component like this:
 - [`eyebrows`](#eyebrows)
 - [`eyes`](#eyes)
 - [`facialHair`](#facialhair)
-- [`graphics`](#graphics)
+- [`graphic`](#graphic)
 - [`hair`](#hair)
 - [`hairColor`](#haircolor)
 - [`hat`](#hat)
+- [`hatColor`](#hatcolor)
+- [`lashes`](#lashes)
 - [`lipColor`](#lipcolor)
 - [`mouth`](#mouth)
+- [`showBackground`](#showbackground)
 - [`size`](#size)
 - [`skinTone`](#skinTone)
 
@@ -193,9 +196,9 @@ Type of facial hair
 
 ---
 
-### `graphics`
+### `graphic`
 
-Type of graphics over the t-shirts
+Type of graphic over the t-shirts
 
 | Type     | Required |
 | -------- | -------- |
@@ -233,6 +236,26 @@ Type of hat
 
 ---
 
+### `hatColor`
+
+The color of the hat
+
+| Type     | Required |
+| -------- | -------- |
+| enum('white', 'blue', 'black', 'green', 'red') | No       |
+
+---
+
+### `lashes`
+
+Show lashes
+
+| Type     | Required |
+| -------- | -------- |
+| boolean  | No       |
+
+---
+
 ### `lipColor`
 
 The color of the lips
@@ -250,6 +273,17 @@ Type of mouth
 | Type     | Required |
 | -------- | -------- |
 | enum('grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue') | No       |
+
+---
+
+### `showBackground`
+
+Whether or not to display the background color
+When `true` it cuts off everything below the avatar otherwise it won't clip off any of the avatar
+
+| Type     | Required | Default |
+| -------- | -------- |
+| boolean  | No       | true    |
 
 ---
 
