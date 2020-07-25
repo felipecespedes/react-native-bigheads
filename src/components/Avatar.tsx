@@ -63,6 +63,8 @@ import { GraphQLGraphic } from './clothingGraphic/GraphQL'
 import { Tongue } from './mouths/Tongue'
 import { DressShirt } from './clothing/DressShirt'
 import { StyleSheet, ViewProps } from 'react-native'
+import { FaceMask } from './accessories/FaceMask'
+import { HoopEarrings } from './accessories/HoopEarrings'
 
 export const eyesMap = {
   normal: NormalEyes,
@@ -128,6 +130,8 @@ export const accessoryMap = {
   roundGlasses: RoundGlasses,
   tinyGlasses: TinyGlasses,
   shades: Shades,
+  faceMask: FaceMask,
+  hoopEarrings: HoopEarrings
 }
 
 export const graphicsMap = {
