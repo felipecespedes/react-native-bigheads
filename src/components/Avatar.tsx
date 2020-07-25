@@ -77,6 +77,8 @@ import { Cyborg } from './eyes/Cyborg'
 import { SimplePatch } from './eyes/SimplePatch'
 import { PiratePatch } from './eyes/PiratePatch'
 import { Goatee } from './facialHair/Goatee'
+import { Donut } from './clothingGraphic/Donut'
+import { Rainbow } from './clothingGraphic/Rainbow'
 
 export const eyesMap = {
   normal: NormalEyes,
@@ -165,6 +167,8 @@ export const graphicsMap = {
   vue: VueGraphics,
   react: ReactGraphic,
   graphQL: GraphQLGraphic,
+  donut: Donut,
+  rainbow: Rainbow
 }
 
 export const hatMap = {
