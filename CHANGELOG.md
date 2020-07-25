@@ -9,6 +9,7 @@
 * New `mouth` values were added: `piercedTongue`, `vomitingRainbow`
 * `bgShape` prop was introduced, its possible values are: `square`, `circle`, `squircle`
 * `bgColor` prop was introduced, its possible values are: `blue`, `green`, `red`, `orange`, `yellow`, `turqoise`, `pink`, `purple`
+
 *These new values and props were inspired by [vue-bigheads](https://github.com/DerpyScripts/vue-bigheads)*
 
 ## Braking changes
