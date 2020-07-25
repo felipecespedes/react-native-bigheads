@@ -71,8 +71,9 @@ use the `BigHead` component like this:
 ### Props
 
 - [`accessory`](#accessory)
+- [`bgColor`](#bgcolor)
+- [`bgShape`](#bgshape)
 - [`body`](#body)
-- [`circleColor`](#circlecolor)
 - [`clothing`](#clothing)
 - [`clothingColor`](#clothingcolor)
 - [`containerProps`](#containerprops)
@@ -102,7 +103,27 @@ Type of accessory
 
 | Type     | Required |
 | -------- | -------- |
-| enum('none', 'roundGlasses', 'tinyGlasses', 'shades') | No       |
+| enum('none', 'roundGlasses', 'tinyGlasses', 'shades', 'faceMask', 'hoopEarrings') | No       |
+
+---
+
+### `bgColor`
+
+The color of the background
+
+| Type     | Required |
+| -------- | -------- |
+| enum('blue', 'green', 'red', 'orange', 'yellow', 'turqoise', 'pink', 'purple') | No       |
+
+---
+
+### `bgShape`
+
+The shape of the background
+
+| Type     | Required |
+| -------- | -------- |
+| enum('circle', 'square', 'squircle') | No       |
 
 ---
 
@@ -116,23 +137,13 @@ Type of body
 
 ---
 
-### `circleColor`
-
-The color of the circular background
-
-| Type     | Required |
-| -------- | -------- |
-| enum('blue') | No       |
-
----
-
 ### `clothing`
 
 Type of cloth
 
 | Type     | Required |
 | -------- | -------- |
-| enum('naked', 'shirt', 'dressShirt', 'vneck', 'tankTop', 'dress') | No       |
+| enum('naked', 'shirt', 'dressShirt', 'vneck', 'tankTop', 'dress', 'denimJacket', 'hoodie', 'chequeredShirt', 'chequeredShirtDark') | No       |
 
 ---
 
@@ -182,7 +193,7 @@ Type of eyes
 
 | Type     | Required |
 | -------- | -------- |
-| enum('normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'heart') | No       |
+| enum('normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'hearts', 'crazy', 'cute', 'dollars', 'stars', 'cyborg', 'simplePatch', 'piratePatch') | No       |
 
 ---
 
@@ -192,7 +203,7 @@ Type of facial hair
 
 | Type     | Required |
 | -------- | -------- |
-| enum('none', 'none2', 'none3', 'stubble', 'mediumBeard') | No       |
+| enum('none', 'stubble', 'mediumBeard', 'goatee') | No       |
 
 ---
 
@@ -202,7 +213,7 @@ Type of graphic over the t-shirts
 
 | Type     | Required |
 | -------- | -------- |
-| enum('none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL') | No       |
+| enum('none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL', 'donut', 'rainbow') | No       |
 
 ---
 
@@ -212,7 +223,7 @@ Type of hair
 
 | Type     | Required |
 | -------- | -------- |
-| enum('none', 'long', 'bun', 'short', 'pixie', 'balding', 'buzz', 'afro', 'bob') | No       |
+| enum('none', 'long', 'bun', 'short', 'pixie', 'balding', 'buzz', 'afro', 'bob', 'mohawk') | No       |
 
 ---
 
@@ -232,7 +243,7 @@ Type of hat
 
 | Type     | Required |
 | -------- | -------- |
-| enum('none', 'none2', 'none3', 'none4', 'none5', 'beanie', 'turban') | No       |
+| enum('none', 'beanie', 'turban', 'party', 'hijab') | No       |
 
 ---
 
@@ -272,7 +283,7 @@ Type of mouth
 
 | Type     | Required |
 | -------- | -------- |
-| enum('grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue') | No       |
+| enum('grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue', 'piercedTongue', 'vomitingRainbow') | No       |
 
 ---
 
