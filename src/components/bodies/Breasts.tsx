@@ -150,3 +150,5 @@ export const Back = ({ clothingColor, braStraps }: BodyProps) => {
     </>
   )
 }
+
+export const hasBreasts = true

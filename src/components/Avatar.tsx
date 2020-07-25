@@ -63,6 +63,33 @@ import { GraphQLGraphic } from './clothingGraphic/GraphQL'
 import { Tongue } from './mouths/Tongue'
 import { DressShirt } from './clothing/DressShirt'
 import { StyleSheet, ViewProps } from 'react-native'
+import { FaceMask } from './accessories/FaceMask'
+import { HoopEarrings } from './accessories/HoopEarrings'
+import { Hoodie } from './clothing/Hoodie'
+import { DenimJacket } from './clothing/DenimJacket'
+import * as ChequeredShirt from './clothing/ChequeredShirt'
+import * as ChequeredShirtDark from './clothing/ChequeredShirtDark'
+import { Crazy } from './eyes/Crazy'
+import { Cute } from './eyes/Cute'
+import { Dollars } from './eyes/Dollars'
+import { Stars } from './eyes/Stars'
+import { Cyborg } from './eyes/Cyborg'
+import { SimplePatch } from './eyes/SimplePatch'
+import { PiratePatch } from './eyes/PiratePatch'
+import { Goatee } from './facialHair/Goatee'
+import { Donut } from './clothingGraphic/Donut'
+import { Rainbow } from './clothingGraphic/Rainbow'
+import * as Mohawk from './hair/Mohawk'
+import * as Party from './hats/Party'
+import * as Hijab from './hats/Hijab'
+import { PiercedTongue } from './mouths/PiercedTongue'
+import { VomitingRainbow } from './mouths/VomitingRainbow'
+import { BgCircle } from './backgrounds/BgCircle'
+import { BgSquare } from './backgrounds/BgSquare'
+import { BgSquircle } from './backgrounds/BgSquircle'
+import { BgCircleMask } from './backgrounds/BgCircleMask'
+import { BgSquareMask } from './backgrounds/BgSquareMask'
+import { BgSquircleMask } from './backgrounds/BgSquircleMask'
 
 export const eyesMap = {
   normal: NormalEyes,
@@ -73,7 +100,14 @@ export const eyesMap = {
   simple: SimpleEyes,
   dizzy: DizzyEyes,
   wink: WinkEyes,
-  heart: HeartEyes,
+  hearts: HeartEyes,
+  crazy: Crazy,
+  cute: Cute,
+  dollars: Dollars,
+  stars: Stars,
+  cyborg: Cyborg,
+  simplePatch: SimplePatch,
+  piratePatch: PiratePatch
 }
 
 export const eyebrowsMap = {
@@ -92,6 +126,8 @@ export const mouthsMap = {
   open: OpenMouth,
   serious: SeriousMouth,
   tongue: Tongue,
+  piercedTongue: PiercedTongue,
+  vomitingRainbow: VomitingRainbow
 }
 
 export const hairMap = {
@@ -104,6 +140,7 @@ export const hairMap = {
   buzz: BuzzCut,
   afro: Afro,
   bob: BobCut,
+  mohawk: Mohawk
 }
 
 export const facialHairMap = {
@@ -112,6 +149,7 @@ export const facialHairMap = {
   none3: Noop,
   stubble: StubbleBeard,
   mediumBeard: MediumBeard,
+  goatee: Goatee
 }
 
 export const clothingMap = {
@@ -121,6 +159,10 @@ export const clothingMap = {
   vneck: { Back: VNeck, Front: Noop },
   tankTop: { Back: TankTop, Front: Noop },
   dress: Dress,
+  denimJacket: { Back: DenimJacket, Front: Noop },
+  hoodie: { Back: Hoodie, Front: Noop },
+  chequeredShirt: ChequeredShirt,
+  chequeredShirtDark: ChequeredShirtDark
 }
 
 export const accessoryMap = {
@@ -128,6 +170,8 @@ export const accessoryMap = {
   roundGlasses: RoundGlasses,
   tinyGlasses: TinyGlasses,
   shades: Shades,
+  faceMask: FaceMask,
+  hoopEarrings: HoopEarrings
 }
 
 export const graphicsMap = {
@@ -137,6 +181,8 @@ export const graphicsMap = {
   vue: VueGraphics,
   react: ReactGraphic,
   graphQL: GraphQLGraphic,
+  donut: Donut,
+  rainbow: Rainbow
 }
 
 export const hatMap = {
@@ -147,11 +193,19 @@ export const hatMap = {
   none5: { Front: Noop, Back: Noop },
   beanie: Beanie,
   turban: Turban,
+  party: Party,
+  hijab: Hijab
 }
 
 export const bodyMap = {
   chest: Chest,
   breasts: Breasts,
+}
+
+export const bgShapeMap = {
+  circle: { Shape: BgCircle, Mask: BgCircleMask },
+  square: { Shape: BgSquare, Mask: BgSquareMask },
+  squircle: { Shape: BgSquircle, Mask: BgSquircleMask }
 }
 
 function selectRandomKey<T extends {}>(object: T) {
@@ -175,11 +229,12 @@ export interface AvatarProps {
 
   hairColor?: keyof typeof colors.hair
   clothingColor?: keyof typeof colors.clothing
-  circleColor?: keyof typeof colors.bgColors
+  bgShape?: keyof typeof bgShapeMap
+  bgColor?: keyof typeof colors.bgColors
   lipColor?: keyof typeof colors.lipColors
   hatColor?: keyof typeof colors.clothing
 
-  mask?: boolean
+  showBackground?: boolean
   lashes?: boolean
 
   size: number
@@ -202,11 +257,12 @@ export const Avatar = ({
 
   hairColor = selectRandomKey(colors.hair),
   clothingColor = selectRandomKey(colors.clothing),
-  circleColor = selectRandomKey(colors.bgColors),
+  bgShape = selectRandomKey(bgShapeMap),
+  bgColor = selectRandomKey(colors.bgColors),
   lipColor = selectRandomKey(colors.lipColors),
   hatColor = selectRandomKey(colors.clothing),
 
-  mask = true,
+  showBackground = true,
   lashes = Math.random() > 0.5,
 
   size = 100,
@@ -227,6 +283,7 @@ export const Avatar = ({
   const Graphic = graphicsMap[graphic]
   const Hat = hatMap[hat]
   const Body = bodyMap[body]
+  const BgShape = bgShapeMap[bgShape]
 
   return (
     <ThemeContext.Provider value={{ colors, skin }}>
@@ -244,9 +301,10 @@ export const Avatar = ({
         hatColor={hatColor}
         hairColor={hairColor}
         clothingColor={clothingColor}
-        circleColor={circleColor}
+        bgShape={BgShape}
+        bgColor={bgColor}
         lipColor={lipColor}
-        mask={mask}
+        showBackground={showBackground}
         lashes={lashes}
         size={size}
         containerStyles={containerStyles}

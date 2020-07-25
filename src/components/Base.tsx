@@ -5,8 +5,6 @@ import { Noop } from '../utils/Noop'
 import { FacialHairProps } from './facialHair/types'
 import { HairProps } from './hair/types'
 import { ClothingProps } from './clothing/types'
-import { Mask } from './Mask'
-import { BgCircle } from './BgCircle'
 import { MouthProps } from './mouths/types'
 import { BodyProps } from './bodies/types'
 import { HatProps } from './hats/types'
@@ -14,7 +12,7 @@ import { EyeProps } from './eyes/types'
 import { DressShirt } from './clothing/DressShirt'
 import { Svg, G, Path } from 'react-native-svg'
 import { View, ViewProps, StyleSheet } from 'react-native'
-
+import { BgShapeProps, BgMaskProps } from './backgrounds/types'
 interface BaseProps {
   eyes: React.ComponentType<EyeProps>
   eyebrows: React.ComponentType
@@ -34,6 +32,7 @@ interface BaseProps {
   body: {
     Front: React.ComponentType<BodyProps>
     Back: React.ComponentType<BodyProps>
+    hasBreasts: boolean
   }
   clothing: {
     Front: React.ComponentType<ClothingProps>
@@ -43,11 +42,15 @@ interface BaseProps {
 
   clothingColor: keyof typeof colors.clothing
   hairColor: keyof typeof colors.hair
-  circleColor: keyof typeof colors.bgColors
+  bgShape: {
+    Shape: React.ComponentType<BgShapeProps>,
+    Mask: React.ComponentType<BgMaskProps>
+  }
+  bgColor: keyof typeof colors.bgColors
   lipColor: keyof typeof colors.lipColors
   hatColor: keyof typeof colors.clothing
 
-  mask: boolean
+  showBackground: boolean
   lashes: boolean
 
   size: number
@@ -69,11 +72,12 @@ export const Base = ({
 
   hairColor,
   clothingColor,
-  circleColor,
+  bgShape = { Shape: Noop, Mask: Noop },
+  bgColor,
   lipColor,
   hatColor,
 
-  mask,
+  showBackground,
   lashes,
   size = 100,
   containerStyles = {},
@@ -85,12 +89,13 @@ export const Base = ({
 
   const { Front: FrontHair, Back: BackHair, hatScale } = hair
   const { Front: FrontHat, Back: BackHat } = hat
-  const { Front: FrontBody, Back: BackBody } = body
+  const { Front: FrontBody, Back: BackBody, hasBreasts } = body
   const {
     Front: ClothingFront,
     Back: ClothingBack,
     braStraps = true,
   } = clothing
+  const { Shape: BgShape, Mask: BgMask } = bgShape
 
   return (
     <View
@@ -105,9 +110,9 @@ export const Base = ({
       { ...containerProps }
     >
       <Svg viewBox="0 0 1000 990" {...rest}>
-        {mask && <Mask id="mask" />}
+        {showBackground && <BgMask id="mask" />}
         <G mask="url(#mask)">
-          {mask && <BgCircle circleColor={circleColor} />}
+          {showBackground && <BgShape bgColor={bgColor} />}
           <BackHat color={hatColor} scale={hatScale} />
           <BackHair hairColor={hairColor} hasHat={FrontHat !== Noop} />
           <Path
@@ -194,7 +199,7 @@ export const Base = ({
           />
 
           <BackBody clothingColor={clothingColor} braStraps={braStraps} />
-          <ClothingBack color={clothingColor} graphic={Graphic} />
+          <ClothingBack color={clothingColor} graphic={Graphic} hasBreasts={hasBreasts} />
           {!(ClothingFront === Noop && ClothingBack === Noop) && (
             <FrontBody
               clothingColor={
@@ -203,12 +208,12 @@ export const Base = ({
               braStraps={braStraps}
             />
           )}
-          <ClothingFront color={clothingColor} graphic={Graphic} />
-          <FacialHair color={hairColor} />
+          <ClothingFront color={clothingColor} graphic={Graphic} hasBreasts={hasBreasts} />
+          <Eyebrows />
           <Eyes withLashes={lashes} />
+          <FacialHair color={hairColor} />
           <Mouth lipColor={lipColor} />
           <FrontHair hairColor={hairColor} hasHat={FrontHat !== Noop} />
-          <Eyebrows />
           <FrontHat color={hatColor} scale={hatScale} />
           <Accessory />
         </G>

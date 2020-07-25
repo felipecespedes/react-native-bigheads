@@ -46,10 +46,10 @@ use the `BigHead` component like this:
 
 ```jsx
 <BigHead
-  size={300}
   accessory="shades"
+  bgColor="blue"
+  bgShape="circle"
   body="chest"
-  circleColor="blue"
   clothing="tankTop"
   clothingColor="black"
   eyebrows="angry"
@@ -60,10 +60,11 @@ use the `BigHead` component like this:
   hairColor="black"
   hat="none"
   hatColor="green"
-  lashes="false"
+  lashes={false}
   lipColor="purple"
-  mask="true"
   mouth="open"
+  showBackground={true}
+  size={300}
   skinTone="brown"
 />
 ```
@@ -71,8 +72,9 @@ use the `BigHead` component like this:
 ### Props
 
 - [`accessory`](#accessory)
+- [`bgColor`](#bgcolor)
+- [`bgShape`](#bgshape)
 - [`body`](#body)
-- [`circleColor`](#circlecolor)
 - [`clothing`](#clothing)
 - [`clothingColor`](#clothingcolor)
 - [`containerProps`](#containerprops)
@@ -80,12 +82,15 @@ use the `BigHead` component like this:
 - [`eyebrows`](#eyebrows)
 - [`eyes`](#eyes)
 - [`facialHair`](#facialhair)
-- [`graphics`](#graphics)
+- [`graphic`](#graphic)
 - [`hair`](#hair)
 - [`hairColor`](#haircolor)
 - [`hat`](#hat)
+- [`hatColor`](#hatcolor)
+- [`lashes`](#lashes)
 - [`lipColor`](#lipcolor)
 - [`mouth`](#mouth)
+- [`showBackground`](#showbackground)
 - [`size`](#size)
 - [`skinTone`](#skinTone)
 
@@ -97,9 +102,29 @@ use the `BigHead` component like this:
 
 Type of accessory
 
-| Type     | Required |
-| -------- | -------- |
-| enum('none', 'roundGlasses', 'tinyGlasses', 'shades') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('none', 'roundGlasses', 'tinyGlasses', 'shades', 'faceMask', 'hoopEarrings') | No       | Random |
+
+---
+
+### `bgColor`
+
+The color of the background
+
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('blue', 'green', 'red', 'orange', 'yellow', 'turqoise', 'pink', 'purple') | No       | Random |
+
+---
+
+### `bgShape`
+
+The shape of the background
+
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('circle', 'square', 'squircle') | No       | Random |
 
 ---
 
@@ -107,19 +132,9 @@ Type of accessory
 
 Type of body
 
-| Type     | Required |
-| -------- | -------- |
-| enum('chest', 'breasts') | No       |
-
----
-
-### `circleColor`
-
-The color of the circular background
-
-| Type     | Required |
-| -------- | -------- |
-| enum('blue') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('chest', 'breasts') | No | Random |
 
 ---
 
@@ -127,9 +142,9 @@ The color of the circular background
 
 Type of cloth
 
-| Type     | Required |
-| -------- | -------- |
-| enum('naked', 'shirt', 'dressShirt', 'vneck', 'tankTop', 'dress') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('naked', 'shirt', 'dressShirt', 'vneck', 'tankTop', 'dress', 'denimJacket', 'hoodie', 'chequeredShirt', 'chequeredShirtDark') | No       | Random |
 
 ---
 
@@ -137,9 +152,9 @@ Type of cloth
 
 The color of the clothes
 
-| Type     | Required |
-| -------- | -------- |
-| enum('white', 'blue', 'black', 'green', 'red') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('white', 'blue', 'black', 'green', 'red') | No       | Random |
 
 ---
 
@@ -167,9 +182,9 @@ Styles to be applied to the container element ([View](https://reactnative.dev/do
 
 Type of eyebrows
 
-| Type     | Required |
-| -------- | -------- |
-| enum('raised', 'leftLowered', 'serious', 'angry', 'concerned') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('raised', 'leftLowered', 'serious', 'angry', 'concerned') | No       | Random |
 
 ---
 
@@ -177,9 +192,9 @@ Type of eyebrows
 
 Type of eyes
 
-| Type     | Required |
-| -------- | -------- |
-| enum('normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'heart') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'hearts', 'crazy', 'cute', 'dollars', 'stars', 'cyborg', 'simplePatch', 'piratePatch') | No       | Random |
 
 ---
 
@@ -187,19 +202,19 @@ Type of eyes
 
 Type of facial hair
 
-| Type     | Required |
-| -------- | -------- |
-| enum('none', 'none2', 'none3', 'stubble', 'mediumBeard') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('none', 'stubble', 'mediumBeard', 'goatee') | No       | Random |
 
 ---
 
-### `graphics`
+### `graphic`
 
-Type of graphics over the t-shirts
+Type of graphic over the t-shirts
 
-| Type     | Required |
-| -------- | -------- |
-| enum('none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL', 'donut', 'rainbow') | No       | Random |
 
 ---
 
@@ -207,9 +222,9 @@ Type of graphics over the t-shirts
 
 Type of hair
 
-| Type     | Required |
-| -------- | -------- |
-| enum('none', 'long', 'bun', 'short', 'pixie', 'balding', 'buzz', 'afro', 'bob') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('none', 'long', 'bun', 'short', 'pixie', 'balding', 'buzz', 'afro', 'bob', 'mohawk') | No       | Random |
 
 ---
 
@@ -217,9 +232,9 @@ Type of hair
 
 The color of the hair
 
-| Type     | Required |
-| -------- | -------- |
-| enum('blonde', 'orange', 'black', 'white', 'brown', 'blue', 'pink') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('blonde', 'orange', 'black', 'white', 'brown', 'blue', 'pink') | No       | Random |
 
 ----
 
@@ -227,9 +242,29 @@ The color of the hair
 
 Type of hat
 
-| Type     | Required |
-| -------- | -------- |
-| enum('none', 'none2', 'none3', 'none4', 'none5', 'beanie', 'turban') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('none', 'beanie', 'turban', 'party', 'hijab') | No       | Random |
+
+---
+
+### `hatColor`
+
+The color of the hat
+
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('white', 'blue', 'black', 'green', 'red') | No       | Random |
+
+---
+
+### `lashes`
+
+Show lashes
+
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| boolean  | No       | Random  |
 
 ---
 
@@ -237,9 +272,9 @@ Type of hat
 
 The color of the lips
 
-| Type     | Required |
-| -------- | -------- |
-| enum('red', 'purple', 'pink', 'turqoise', 'green') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('red', 'purple', 'pink', 'turqoise', 'green') | No       | Random |
 
 ---
 
@@ -247,9 +282,21 @@ The color of the lips
 
 Type of mouth
 
-| Type     | Required |
-| -------- | -------- |
-| enum('grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue', 'piercedTongue', 'vomitingRainbow') | No       | Random |
+
+---
+
+### `showBackground`
+
+Whether or not to display the background color
+
+When `true` it cuts off everything below the avatar otherwise it won't clip off any of the avatar
+
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| boolean  | No       | true    |
 
 ---
 
@@ -267,15 +314,18 @@ Size of the avatar
 
 The color of the skin
 
-| Type     | Required |
-| -------- | -------- |
-| enum('light', 'yellow', 'brown', 'dark', 'red', 'black') | No       |
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('light', 'yellow', 'brown', 'dark', 'red', 'black') | No       | Random |
 
 ---
 
 # Authors
 - Some portions of this code belong to the [Big Heads authors](https://github.com/RobertBroersma/bigheads) which are distributed under the [MIT License](https://github.com/RobertBroersma/bigheads/blob/main/LICENSE)
 - [Felipe Céspedes](https://felipecespedes.github.io/) <img src="https://bigheads.io/svg?accessory=roundGlasses&body=chest&circleColor=blue&clothing=shirt&clothingColor=red&eyebrows=raised&eyes=happy&facialHair=none&graphic=none&hair=short&hairColor=brown&hat=none5&hatColor=red&lashes=true&lipColor=red&mask=true&mouth=grin&skinTone=light" alt="Big Head" height="50" />
+
+# Changelog
+[Learn about the latest improvements](https://github.com/felipecespedes/react-native-bigheads/blob/master/CHANGELOG.md)
 
 # License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/felipecespedes/react-native-bigheads/blob/master/LICENSE) file for details

@@ -101,8 +101,13 @@ export const colors = {
   },
   bgColors: {
     blue: '#85c5e5',
-    // green: '#89D86F',
-    // red: '#ED9191',
+    green: '#89D86F',
+    red: '#ED9191',
+    orange: "#F6AD55",
+    yellow: "#F6E05E",
+    turqoise: "#4FD1C5",
+    pink: "#F687B3",
+    purple: "#B794F4"
   },
   outline: '#592d3d',
   white: '#ffffff',
