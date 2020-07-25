@@ -80,6 +80,8 @@ import { Goatee } from './facialHair/Goatee'
 import { Donut } from './clothingGraphic/Donut'
 import { Rainbow } from './clothingGraphic/Rainbow'
 import * as Mohawk from './hair/Mohawk'
+import * as Party from './hats/Party'
+import * as Hijab from './hats/Hijab'
 
 export const eyesMap = {
   normal: NormalEyes,
@@ -181,6 +183,8 @@ export const hatMap = {
   none5: { Front: Noop, Back: Noop },
   beanie: Beanie,
   turban: Turban,
+  party: Party,
+  hijab: Hijab
 }
 
 export const bodyMap = {
