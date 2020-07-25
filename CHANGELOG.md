@@ -12,7 +12,7 @@
 
 *These new values and props were inspired by [vue-bigheads](https://github.com/DerpyScripts/vue-bigheads)*
 
-## Braking changes
+## Breaking changes
 * `mask` prop was renamed to `showBackground`
 * `circleColor` prop was renamed to `bgColor`
 * `heart` value was renamed to `hearts` in the `eyes` prop
