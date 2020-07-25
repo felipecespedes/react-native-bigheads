@@ -234,7 +234,7 @@ export interface AvatarProps {
   lipColor?: keyof typeof colors.lipColors
   hatColor?: keyof typeof colors.clothing
 
-  mask?: boolean
+  showBackground?: boolean
   lashes?: boolean
 
   size: number
@@ -262,7 +262,7 @@ export const Avatar = ({
   lipColor = selectRandomKey(colors.lipColors),
   hatColor = selectRandomKey(colors.clothing),
 
-  mask = true,
+  showBackground = true,
   lashes = Math.random() > 0.5,
 
   size = 100,
@@ -304,7 +304,7 @@ export const Avatar = ({
         bgShape={BgShape}
         bgColor={bgColor}
         lipColor={lipColor}
-        mask={mask}
+        showBackground={showBackground}
         lashes={lashes}
         size={size}
         containerStyles={containerStyles}

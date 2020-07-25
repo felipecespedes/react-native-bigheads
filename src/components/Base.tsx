@@ -50,7 +50,7 @@ interface BaseProps {
   lipColor: keyof typeof colors.lipColors
   hatColor: keyof typeof colors.clothing
 
-  mask: boolean
+  showBackground: boolean
   lashes: boolean
 
   size: number
@@ -77,7 +77,7 @@ export const Base = ({
   lipColor,
   hatColor,
 
-  mask,
+  showBackground,
   lashes,
   size = 100,
   containerStyles = {},
@@ -95,7 +95,7 @@ export const Base = ({
     Back: ClothingBack,
     braStraps = true,
   } = clothing
-  const { Shape: BgShape, Mask: BgMask } = bgShape;
+  const { Shape: BgShape, Mask: BgMask } = bgShape
 
   return (
     <View
@@ -110,9 +110,9 @@ export const Base = ({
       { ...containerProps }
     >
       <Svg viewBox="0 0 1000 990" {...rest}>
-        {mask && <BgMask id="mask" />}
+        {showBackground && <BgMask id="mask" />}
         <G mask="url(#mask)">
-          {mask && <BgShape bgColor={bgColor} />}
+          {showBackground && <BgShape bgColor={bgColor} />}
           <BackHat color={hatColor} scale={hatScale} />
           <BackHair hairColor={hairColor} hasHat={FrontHat !== Noop} />
           <Path
