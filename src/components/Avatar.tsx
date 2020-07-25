@@ -82,6 +82,8 @@ import { Rainbow } from './clothingGraphic/Rainbow'
 import * as Mohawk from './hair/Mohawk'
 import * as Party from './hats/Party'
 import * as Hijab from './hats/Hijab'
+import { PiercedTongue } from './mouths/PiercedTongue'
+import { VomitingRainbow } from './mouths/VomitingRainbow'
 
 export const eyesMap = {
   normal: NormalEyes,
@@ -118,6 +120,8 @@ export const mouthsMap = {
   open: OpenMouth,
   serious: SeriousMouth,
   tongue: Tongue,
+  piercedTongue: PiercedTongue,
+  vomitingRainbow: VomitingRainbow
 }
 
 export const hairMap = {
