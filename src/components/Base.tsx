@@ -205,11 +205,11 @@ export const Base = ({
             />
           )}
           <ClothingFront color={clothingColor} graphic={Graphic} hasBreasts={hasBreasts} />
-          <FacialHair color={hairColor} />
+          <Eyebrows />
           <Eyes withLashes={lashes} />
+          <FacialHair color={hairColor} />
           <Mouth lipColor={lipColor} />
           <FrontHair hairColor={hairColor} hasHat={FrontHat !== Noop} />
-          <Eyebrows />
           <FrontHat color={hatColor} scale={hatScale} />
           <Accessory />
         </G>

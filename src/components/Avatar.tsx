@@ -69,6 +69,13 @@ import { Hoodie } from './clothing/Hoodie'
 import { DenimJacket } from './clothing/DenimJacket'
 import * as ChequeredShirt from './clothing/ChequeredShirt'
 import * as ChequeredShirtDark from './clothing/ChequeredShirtDark'
+import { Crazy } from './eyes/Crazy'
+import { Cute } from './eyes/Cute'
+import { Dollars } from './eyes/Dollars'
+import { Stars } from './eyes/Stars'
+import { Cyborg } from './eyes/Cyborg'
+import { SimplePatch } from './eyes/SimplePatch'
+import { PiratePatch } from './eyes/PiratePatch'
 
 export const eyesMap = {
   normal: NormalEyes,
@@ -79,7 +86,14 @@ export const eyesMap = {
   simple: SimpleEyes,
   dizzy: DizzyEyes,
   wink: WinkEyes,
-  heart: HeartEyes,
+  hearts: HeartEyes,
+  crazy: Crazy,
+  cute: Cute,
+  dollars: Dollars,
+  stars: Stars,
+  cyborg: Cyborg,
+  simplePatch: SimplePatch,
+  piratePatch: PiratePatch
 }
 
 export const eyebrowsMap = {
