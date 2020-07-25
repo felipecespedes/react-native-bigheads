@@ -79,6 +79,7 @@ import { PiratePatch } from './eyes/PiratePatch'
 import { Goatee } from './facialHair/Goatee'
 import { Donut } from './clothingGraphic/Donut'
 import { Rainbow } from './clothingGraphic/Rainbow'
+import * as Mohawk from './hair/Mohawk'
 
 export const eyesMap = {
   normal: NormalEyes,
@@ -127,6 +128,7 @@ export const hairMap = {
   buzz: BuzzCut,
   afro: Afro,
   bob: BobCut,
+  mohawk: Mohawk
 }
 
 export const facialHairMap = {
