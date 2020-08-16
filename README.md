@@ -6,7 +6,7 @@
 
 **BigHeads** avatars for React Native. Based on [@bigheads/core](https://github.com/RobertBroersma/bigheads)
 
-<a href="https://www.buymeacoffee.com/felipecespedes" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-red.png" alt="Buy Me A Coffee" style="height: 41px !important; width: 174px !important;" ></a>
+<a href="https://www.buymeacoffee.com/felipecespedes" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-red.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 <p align="center" >
   <img alt="Big Heads Demo" src="https://bigheads.io/svg?one" height="100" />
