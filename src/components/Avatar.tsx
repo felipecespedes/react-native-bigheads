@@ -237,9 +237,9 @@ export interface AvatarProps {
   showBackground?: boolean
   lashes?: boolean
 
-  size: number
-  containerStyles: StyleSheet.NamedStyles<{}>
-  containerProps: ViewProps
+  size?: number
+  containerStyles?: StyleSheet.NamedStyles<{}>
+  containerProps?: ViewProps
 }
 
 export const Avatar = ({
