@@ -62,7 +62,7 @@ import { VNeck } from './clothing/VNeck'
 import { GraphQLGraphic } from './clothingGraphic/GraphQL'
 import { Tongue } from './mouths/Tongue'
 import { DressShirt } from './clothing/DressShirt'
-import { StyleSheet, ViewProps } from 'react-native'
+import { ViewProps, ViewStyle } from 'react-native'
 import { FaceMask } from './accessories/FaceMask'
 import { HoopEarrings } from './accessories/HoopEarrings'
 import { Hoodie } from './clothing/Hoodie'
@@ -238,9 +238,9 @@ export interface AvatarProps extends SvgProps {
   showBackground?: boolean
   lashes?: boolean
 
-  size: number
-  containerStyles: StyleSheet.NamedStyles<{}>
-  containerProps: ViewProps
+  size?: number
+  containerStyles?: ViewStyle
+  containerProps?: ViewProps
   svgRef?: React.Ref<React.Component<SvgProps>>
 }
 
