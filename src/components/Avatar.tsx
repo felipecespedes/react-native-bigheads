@@ -238,7 +238,7 @@ export interface AvatarProps {
   lashes?: boolean
 
   size?: number
-  containerStyles: StyleProp<ViewStyle>
+  containerStyles?: StyleProp<ViewStyle>
   containerProps?: ViewProps
 }
 
