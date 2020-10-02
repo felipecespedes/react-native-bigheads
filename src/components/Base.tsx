@@ -10,10 +10,10 @@ import { BodyProps } from './bodies/types'
 import { HatProps } from './hats/types'
 import { EyeProps } from './eyes/types'
 import { DressShirt } from './clothing/DressShirt'
-import { Svg, G, Path } from 'react-native-svg'
+import { Svg, G, Path, SvgProps } from 'react-native-svg'
 import { View, ViewProps, StyleSheet } from 'react-native'
 import { BgShapeProps, BgMaskProps } from './backgrounds/types'
-interface BaseProps {
+interface BaseProps extends SvgProps {
   eyes: React.ComponentType<EyeProps>
   eyebrows: React.ComponentType
   mouth: React.ComponentType<MouthProps>
@@ -56,6 +56,7 @@ interface BaseProps {
   size: number
   containerStyles: StyleSheet.NamedStyles<{}>
   containerProps: ViewProps
+  svgRef?: React.Ref<React.Component<SvgProps>>
 }
 
 export const Base = ({
@@ -82,7 +83,7 @@ export const Base = ({
   size = 100,
   containerStyles = {},
   containerProps = {},
-
+  svgRef,
   ...rest
 }: BaseProps) => {
   const { skin } = useTheme()
@@ -109,7 +110,7 @@ export const Base = ({
       }}
       { ...containerProps }
     >
-      <Svg viewBox="0 0 1000 990" {...rest}>
+      <Svg ref={svgRef} viewBox="0 0 1000 990" {...rest}>
         {showBackground && <BgMask id="mask" />}
         <G mask="url(#mask)">
           {showBackground && <BgShape bgColor={bgColor} />}
