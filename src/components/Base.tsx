@@ -11,7 +11,7 @@ import { HatProps } from './hats/types'
 import { EyeProps } from './eyes/types'
 import { DressShirt } from './clothing/DressShirt'
 import { Svg, G, Path } from 'react-native-svg'
-import { View, ViewProps, StyleSheet } from 'react-native'
+import { View, ViewProps, ViewStyle } from 'react-native'
 import { BgShapeProps, BgMaskProps } from './backgrounds/types'
 interface BaseProps {
   eyes: React.ComponentType<EyeProps>
@@ -54,7 +54,7 @@ interface BaseProps {
   lashes: boolean
 
   size: number
-  containerStyles: StyleProp<ViewStyle>
+  containerStyles: ViewStyle
   containerProps: ViewProps
 }
 
