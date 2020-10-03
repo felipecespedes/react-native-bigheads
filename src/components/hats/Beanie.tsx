@@ -16,7 +16,7 @@ export const Front = ({ color }: ClothingProps & HatProps) => {
   const { base, shadow } = colors.clothing[color]
 
   return (
-    <G transform={{ scale: 1, origin: 'center' }} >
+    <G transform={{ scale: 1, origin: 'center' }}>
       <Circle cx="491.44" cy="157.14" r="47.48" fill={base} />
       <Path
         d="M491.44,204.62a47.47,47.47,0,0,0,46.46-57.31c-30.78-4.77-62.7-2-93.77,6-.1,1.26-.17,2.53-.17,3.82A47.48,47.48,0,0,0,491.44,204.62Z"
@@ -197,7 +197,7 @@ export const Back = ({}: HatProps) => {
   const { colors } = useTheme()
 
   return (
-    <G transform={{ scale: 1, origin: 'center' }} >
+    <G transform={{ scale: 1, origin: 'center' }}>
       <Path
         d="M225.35,498c183.42,77.95,371.14,79.06,555.94,0,17.53-7.5,17.43-139.87,0-133.81-180.47,62.83-371.33,63.5-555.94,0C203.39,356.6,205.53,489.53,225.35,498Z"
         fill={colors.outline}

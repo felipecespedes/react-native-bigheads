@@ -108,7 +108,7 @@ export const eyesMap = {
   stars: Stars,
   cyborg: Cyborg,
   simplePatch: SimplePatch,
-  piratePatch: PiratePatch
+  piratePatch: PiratePatch,
 }
 
 export const eyebrowsMap = {
@@ -128,7 +128,7 @@ export const mouthsMap = {
   serious: SeriousMouth,
   tongue: Tongue,
   piercedTongue: PiercedTongue,
-  vomitingRainbow: VomitingRainbow
+  vomitingRainbow: VomitingRainbow,
 }
 
 export const hairMap = {
@@ -141,7 +141,7 @@ export const hairMap = {
   buzz: BuzzCut,
   afro: Afro,
   bob: BobCut,
-  mohawk: Mohawk
+  mohawk: Mohawk,
 }
 
 export const facialHairMap = {
@@ -150,7 +150,7 @@ export const facialHairMap = {
   none3: Noop,
   stubble: StubbleBeard,
   mediumBeard: MediumBeard,
-  goatee: Goatee
+  goatee: Goatee,
 }
 
 export const clothingMap = {
@@ -163,7 +163,7 @@ export const clothingMap = {
   denimJacket: { Back: DenimJacket, Front: Noop },
   hoodie: { Back: Hoodie, Front: Noop },
   chequeredShirt: ChequeredShirt,
-  chequeredShirtDark: ChequeredShirtDark
+  chequeredShirtDark: ChequeredShirtDark,
 }
 
 export const accessoryMap = {
@@ -172,7 +172,7 @@ export const accessoryMap = {
   tinyGlasses: TinyGlasses,
   shades: Shades,
   faceMask: FaceMask,
-  hoopEarrings: HoopEarrings
+  hoopEarrings: HoopEarrings,
 }
 
 export const graphicsMap = {
@@ -183,7 +183,7 @@ export const graphicsMap = {
   react: ReactGraphic,
   graphQL: GraphQLGraphic,
   donut: Donut,
-  rainbow: Rainbow
+  rainbow: Rainbow,
 }
 
 export const hatMap = {
@@ -195,7 +195,7 @@ export const hatMap = {
   beanie: Beanie,
   turban: Turban,
   party: Party,
-  hijab: Hijab
+  hijab: Hijab,
 }
 
 export const bodyMap = {
@@ -206,7 +206,7 @@ export const bodyMap = {
 export const bgShapeMap = {
   circle: { Shape: BgCircle, Mask: BgCircleMask },
   square: { Shape: BgSquare, Mask: BgSquareMask },
-  squircle: { Shape: BgSquircle, Mask: BgSquircleMask }
+  squircle: { Shape: BgSquircle, Mask: BgSquircleMask },
 }
 
 function selectRandomKey<T extends {}>(object: T) {

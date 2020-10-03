@@ -43,7 +43,7 @@ interface BaseProps extends SvgProps {
   clothingColor: keyof typeof colors.clothing
   hairColor: keyof typeof colors.hair
   bgShape: {
-    Shape: React.ComponentType<BgShapeProps>,
+    Shape: React.ComponentType<BgShapeProps>
     Mask: React.ComponentType<BgMaskProps>
   }
   bgColor: keyof typeof colors.bgColors
@@ -91,11 +91,7 @@ export const Base = ({
   const { Front: FrontHair, Back: BackHair, hatScale } = hair
   const { Front: FrontHat, Back: BackHat } = hat
   const { Front: FrontBody, Back: BackBody, hasBreasts } = body
-  const {
-    Front: ClothingFront,
-    Back: ClothingBack,
-    braStraps = true,
-  } = clothing
+  const { Front: ClothingFront, Back: ClothingBack, braStraps = true } = clothing
   const { Shape: BgShape, Mask: BgMask } = bgShape
 
   return (
@@ -108,7 +104,7 @@ export const Base = ({
         // justifyContent: 'center',
         // alignItems: 'center'
       }}
-      { ...containerProps }
+      {...containerProps}
     >
       <Svg ref={svgRef} viewBox="0 0 1000 990" {...rest}>
         {showBackground && <BgMask id="mask" />}
