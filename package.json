@@ -53,7 +53,7 @@
     "@types/react-native": "^0.63.0",
     "husky": "^4.2.5",
     "react": "^16.13.1",
-    "react-native": "^0.60.0",
+    "react-native": "^0.62.2",
     "tsdx": "^0.13.2",
     "tslib": "^2.0.0",
     "typescript": "^3.9.6"
