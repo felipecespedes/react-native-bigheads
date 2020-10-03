@@ -63,9 +63,7 @@ export const SimplePatch = ({ withLashes }: EyeProps) => {
         strokeWidth="12"
         strokeMiterlimit="10"
       />
-      {withLashes && (
-        <LeftLash />
-      )}
+      {withLashes && <LeftLash />}
     </G>
   )
 }

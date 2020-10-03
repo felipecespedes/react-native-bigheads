@@ -11,9 +11,7 @@ export const Front = ({ color }: ClothingProps & HatProps) => {
   const { base } = colors.clothing[color]
 
   return (
-    <G
-      transform={{ scale: 1, origin: 'center' }}
-    >
+    <G transform={{ scale: 1, origin: 'center' }}>
       <Path
         d="M331 453C414.833 434 604.1 408.5 690.5 458.5C660.5 410.5 574.3 363.5 491.5 363.5C428.5 363.5 342.2 408.6 331 453Z"
         fill="black"
@@ -27,11 +25,7 @@ export const Front = ({ color }: ClothingProps & HatProps) => {
         stroke={colors.outline}
         strokeWidth="12"
       />
-      <Path
-        d="M258 535.5C246.5 454 259.3 381 318.5 315C278 387 265 433.5 258 535.5Z"
-        fill="black"
-        fillOpacity="0.2"
-      />
+      <Path d="M258 535.5C246.5 454 259.3 381 318.5 315C278 387 265 433.5 258 535.5Z" fill="black" fillOpacity="0.2" />
       <Path
         d="M666 760L668 752C644.667 745 590.6 736.4 561 758C581.333 752 630.8 744 666 760Z"
         fill="black"

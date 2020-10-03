@@ -82,10 +82,7 @@ export const Hoodie = ({ color }: ClothingProps) => {
         strokeMiterlimit="10"
         strokeLinecap="square"
       />
-      <Path
-        d="M536.5 939H458C458 958 443 974 423 974V1010H571.5V974C550.3 974 536.5 959 536.5 939Z"
-        fill={shadow}
-      />
+      <Path d="M536.5 939H458C458 958 443 974 423 974V1010H571.5V974C550.3 974 536.5 959 536.5 939Z" fill={shadow} />
       <Path
         d="M536.5 939H458C458 958 443 974 423 974V1010H571.5V974C550.3 974 536.5 959 536.5 939Z"
         fill="black"
@@ -98,20 +95,8 @@ export const Hoodie = ({ color }: ClothingProps) => {
         strokeWidth="12"
         strokeLinejoin="round"
       />
-      <Path
-        d="M478 814V863.5"
-        fill="none"
-        stroke={colors.outline}
-        strokeWidth="12"
-        strokeLinecap="round"
-      />
-      <Path
-        d="M527 814V863.5"
-        fill="none"
-        stroke={colors.outline}
-        strokeWidth="12"
-        strokeLinecap="round"
-      />
+      <Path d="M478 814V863.5" fill="none" stroke={colors.outline} strokeWidth="12" strokeLinecap="round" />
+      <Path d="M527 814V863.5" fill="none" stroke={colors.outline} strokeWidth="12" strokeLinecap="round" />
       <Path
         d="M651.092 719.69C656.912 715.683 662.558 711.453 668.032 707C692 766.5 598.931 783.88 531.931 794.88H470.431C403.431 783.88 308 766.5 332.007 707L334.132 708.64C339.598 712.8 345.242 716.673 351.062 720.26C374.612 733.31 400.102 742.26 426.432 748.06C433.022 749.51 439.662 750.77 446.322 751.77C514.932 757.88 590.932 757.88 651.092 719.69Z"
         fill={base}

@@ -21,18 +21,8 @@ export const Cyborg = ({ withLashes }: EyeProps) => {
         stroke={colors.outline}
         strokeWidth="12"
       />
-      <Path
-        d="M589 465H624.5"
-        stroke="#3E3E3E"
-        strokeWidth="12"
-        strokeLinecap="round"
-      />
-      <Path
-        d="M589 444H624.5"
-        stroke="#3E3E3E"
-        strokeWidth="12"
-        strokeLinecap="round"
-      />
+      <Path d="M589 465H624.5" stroke="#3E3E3E" strokeWidth="12" strokeLinecap="round" />
+      <Path d="M589 444H624.5" stroke="#3E3E3E" strokeWidth="12" strokeLinecap="round" />
       <Path
         d="M734 473C739.523 473 744 468.523 744 463C744 457.477 739.523 453 734 453C728.477 453 724 457.477 724 463C724 468.523 728.477 473 734 473Z"
         fill="#3E3E3E"
@@ -69,9 +59,7 @@ export const Cyborg = ({ withLashes }: EyeProps) => {
         d="M660 588C680.435 588 697 571.434 697 551C697 530.565 680.435 514 660 514C639.566 514 623 530.565 623 551C623 571.434 639.566 588 660 588Z"
         fill="#FF8D8D"
       />
-      {withLashes && (
-        <LeftLash />
-      )}
+      {withLashes && <LeftLash />}
     </G>
   )
 }

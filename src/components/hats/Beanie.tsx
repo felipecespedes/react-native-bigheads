@@ -113,10 +113,7 @@ export const Front = ({ color }: ClothingProps & HatProps) => {
         strokeMiterlimit={10}
         strokeWidth="8px"
       />
-      <Path
-        d="M753.07,434.58a3.75,3.75,0,1,0-3.75-3.75,3.8,3.8,0,0,0,3.75,3.75Z"
-        fill={colors.outline}
-      />
+      <Path d="M753.07,434.58a3.75,3.75,0,1,0-3.75-3.75,3.8,3.8,0,0,0,3.75,3.75Z" fill={colors.outline} />
       <Path
         d="M758.28,341.38c10,42.84,8.85,89.43,0,138.64"
         fill="none"
@@ -193,7 +190,7 @@ export const Front = ({ color }: ClothingProps & HatProps) => {
 }
 
 // export const Back = ({ scale = 1 }: HatProps) => {
-export const Back = ({}: HatProps) => {
+export const Back = () => {
   const { colors } = useTheme()
 
   return (

@@ -210,9 +210,7 @@ export const bgShapeMap = {
 }
 
 function selectRandomKey<T extends {}>(object: T) {
-  return (Object.keys(object) as Array<keyof typeof object>)[
-    Math.floor(Math.random() * Object.keys(object).length)
-  ]
+  return (Object.keys(object) as Array<keyof typeof object>)[Math.floor(Math.random() * Object.keys(object).length)]
 }
 
 export interface AvatarProps extends SvgProps {

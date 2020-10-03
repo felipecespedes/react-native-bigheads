@@ -112,10 +112,7 @@ export const Base = ({
           {showBackground && <BgShape bgColor={bgColor} />}
           <BackHat color={hatColor} scale={hatScale} />
           <BackHair hairColor={hairColor} hasHat={FrontHat !== Noop} />
-          <Path
-            d="M610,758.72c90.76,0,72,114.24,72.87,241.28H610Z"
-            fill={skin.base}
-          />
+          <Path d="M610,758.72c90.76,0,72,114.24,72.87,241.28H610Z" fill={skin.base} />
           <Path
             d="M632.74,831.87,610,870l11.38,130h31.76C653.91,819.73,632.74,831.87,632.74,831.87Z"
             fill={skin.shadow}
@@ -135,10 +132,7 @@ export const Base = ({
             strokeMiterlimit={10}
             strokeWidth="12px"
           />
-          <Path
-            d="M386.12,758.72c-90.77,0-72,114.24-72.87,241.28h72.87Z"
-            fill={skin.base}
-          />
+          <Path d="M386.12,758.72c-90.77,0-72,114.24-72.87,241.28h72.87Z" fill={skin.base} />
           <Path
             d="M367.23,831.87,390,870l-11.39,130H346.88C346.07,819.73,367.23,831.87,367.23,831.87Z"
             fill={skin.shadow}
@@ -198,12 +192,7 @@ export const Base = ({
           <BackBody clothingColor={clothingColor} braStraps={braStraps} />
           <ClothingBack color={clothingColor} graphic={Graphic} hasBreasts={hasBreasts} />
           {!(ClothingFront === Noop && ClothingBack === Noop) && (
-            <FrontBody
-              clothingColor={
-                ClothingBack === DressShirt ? 'white' : clothingColor
-              }
-              braStraps={braStraps}
-            />
+            <FrontBody clothingColor={ClothingBack === DressShirt ? 'white' : clothingColor} braStraps={braStraps} />
           )}
           <ClothingFront color={clothingColor} graphic={Graphic} hasBreasts={hasBreasts} />
           <Eyebrows />

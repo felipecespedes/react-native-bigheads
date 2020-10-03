@@ -5,10 +5,7 @@ import { Noop } from '../../utils/Noop'
 import { Polygon } from 'react-native-svg'
 import { Path, Line, G, Polyline, Circle } from 'react-native-svg'
 
-export const DressShirt = ({
-  color,
-  graphic: Graphic = Noop,
-}: ClothingProps) => {
+export const DressShirt = ({ color, graphic: Graphic = Noop }: ClothingProps) => {
   const { colors, skin } = useTheme()
 
   const { base } = colors.clothing[color]
@@ -23,10 +20,7 @@ export const DressShirt = ({
         d="M616.66,758.16l-42.73.1a119.49,119.49,0,0,1-1.43,13.48,63.7,63.7,0,0,1-1.74,6.34c-2.34,6.49-17.26,12-21.49,16.73a48.22,48.22,0,0,1-4.5,4.43c-25.17,18.2-65.17,19.2-89.48-.58a51.36,51.36,0,0,1-7.11-7.61c-4.23-5.56-16.4-11.59-18.1-18.94a60,60,0,0,1-1.08-6.59,63.55,63.55,0,0,1-.36-6.8s-45.21-.56-45.21-.56a13.28,13.28,0,0,0-13.28,13.27v284.69a13.28,13.28,0,0,0,13.28,13.27H622.36a13.27,13.27,0,0,0,13.27-13.27V778C635.63,765.82,629.75,758.16,616.66,758.16Z"
         fill={colors.white}
       />
-      <Path
-        d="M612.84,758.16c63.54,0,88.52,43.39,78.9,272-18.74,6.7-55.91,4.59-55.91,4.59Z"
-        fill={colors.white}
-      />
+      <Path d="M612.84,758.16c63.54,0,88.52,43.39,78.9,272-18.74,6.7-55.91,4.59-55.91,4.59Z" fill={colors.white} />
       <Polygon
         points="451.06 855.4 499.51 831.31 548.09 855.4 511.03 812.38 467.14 813.21 451.06 855.4"
         fill={colors.clothing.white.shadow}
@@ -35,10 +29,7 @@ export const DressShirt = ({
         d="M635.63,831.31s-22.79,84.54-19.31,234l33.21-31,3.58-137.58C647.49,824.5,635.63,831.31,635.63,831.31Z"
         fill={colors.clothing.white.shadow}
       />
-      <Path
-        d="M389,758.16c-61.78,0-88.88,56.45-80.75,245.48,22.42,9.91,56.19,5.58,56.19,5.58Z"
-        fill={colors.white}
-      />
+      <Path d="M389,758.16c-61.78,0-88.88,56.45-80.75,245.48,22.42,9.91,56.19,5.58,56.19,5.58Z" fill={colors.white} />
       <Path
         d="M306.94,957.49q.26,20.46,1.21,43.48c15.27.73,43.69.88,57.11,0l4.18-42.81C358.67,956.9,323.66,956.49,306.94,957.49Z"
         fill={colors.clothing.white.shadow}
@@ -107,13 +98,7 @@ export const DressShirt = ({
         d="M629.63,869.4c-.19-4.18-.1-8.36.06-12.53s.47-8.36.86-12.53c.2-2.09.4-4.18.64-6.27s.49-4.18.86-6.27a54.83,54.83,0,0,1,3.58-12.53,54.37,54.37,0,0,1,3.59,12.53c.36,2.09.63,4.18.85,6.27s.45,4.18.65,6.27c.39,4.17.69,8.35.85,12.53s.26,8.35.06,12.53Z"
         fill={colors.outline}
       />
-      <Path
-        d="M383.43,758.26l233.23-.1"
-        fill="none"
-        stroke={colors.outline}
-        strokeMiterlimit={10}
-        strokeWidth="12px"
-      />
+      <Path d="M383.43,758.26l233.23-.1" fill="none" stroke={colors.outline} strokeMiterlimit={10} strokeWidth="12px" />
       <Polygon
         points="529.39 835.55 507.04 813.21 484.7 835.55 495.68 846.53 485.96 953.16 506.7 969.33 528.12 953.16 518.41 846.53 529.39 835.55"
         fill={colors.clothing.white.shadow}
@@ -129,10 +114,7 @@ export const DressShirt = ({
         strokeMiterlimit={10}
         strokeWidth="6px"
       />
-      <Polygon
-        points="500.04 813.21 522.39 828.55 500.04 850.9 477.7 828.55 500.04 813.21"
-        fill={base}
-      />
+      <Polygon points="500.04 813.21 522.39 828.55 500.04 850.9 477.7 828.55 500.04 813.21" fill={base} />
       <Path
         d="M419.62,758.8s43.27,39.34,74.66,54.81C479,838.82,452.15,848,452.15,848l-59.43-89.23Z"
         fill={colors.white}
